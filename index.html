@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Daniel &amp; Joedie · Wedding Invitation</title>
+<meta name="description" content="You are invited to the wedding of Daniel & Joedie — Saturday, 06 February 2027, Roxy Hotel Lawas, Sarawak.">
+<meta name="theme-color" content="#FCF4CF">
+<!-- Link preview (WhatsApp / Telegram). After deploying, replace the og:image value with the full URL, e.g. https://USERNAME.github.io/REPO/assets/img/studio-cream.jpg -->
+<meta property="og:title" content="Daniel & Joedie · Wedding Invitation">
+<meta property="og:description" content="Saturday, 06 February 2027 · Roxy Hotel Lawas, Sarawak">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/studio-cream.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Gowun+Batang&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+
+<style>
+:root{
+  /* palette: butter yellow · pastel · neutral */
+  --butter:#F6E6A0;
+  --butter-deep:#EBD46F;
+  --butter-soft:#FCF4CF;
+  --cream:#FFFCF3;
+  --sand:#F1EBDD;
+  --mist:#DDEAE8;      /* pastel sea */
+  --sea:#BCD6D8;
+  --blush:#F4DED3;
+  --ink:#46413A;
+  --muted:#8B8478;
+  --line:rgba(70,65,58,.14);
+  --serif:'Cormorant Garamond','Gowun Batang',Georgia,serif;
+  --sans:'Jost','Helvetica Neue',Arial,sans-serif;
+  --kr:'Gowun Batang','Cormorant Garamond',serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);font-weight:300;color:var(--ink);background:var(--cream);line-height:1.7;font-size:16px;overflow-x:hidden}
+body.locked{overflow:hidden;height:100svh}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:6px}
+
+.wrap{max-width:540px;margin:0 auto;padding:0 24px}
+section{position:relative;padding:84px 0 130px;text-align:center}
+.bg-cream{background:var(--cream)}
+.bg-butter{background:var(--butter-soft)}
+.bg-mist{background:var(--mist)}
+
+/* ---------- type ---------- */
+.eyebrow{font-size:11px;letter-spacing:.38em;text-transform:uppercase;color:var(--muted);font-weight:400}
+.kr{font-family:var(--kr);font-size:15px;letter-spacing:.2em;color:var(--muted)}
+h2{font-family:var(--serif);font-weight:300;font-style:italic;font-size:clamp(34px,9vw,44px);line-height:1.15;margin:10px 0 0}
+.names{font-family:var(--serif);font-weight:300;font-size:clamp(44px,13vw,60px);line-height:1;letter-spacing:.01em}
+.names i{font-weight:300;font-size:.55em;margin:0 .15em;color:var(--muted)}
+p.lead{max-width:420px;margin:22px auto 0;color:#5d574e}
+.rule{width:44px;height:1px;background:var(--ink);opacity:.35;margin:26px auto}
+
+/* ---------- waves ---------- */
+.waves{position:absolute;left:0;right:0;bottom:-1px;height:84px;overflow:hidden;pointer-events:none;color:var(--wc,var(--cream))}
+.wv{position:absolute;left:0;bottom:0;width:200%;height:100%;animation:drift 16s linear infinite}
+.wv.l1{opacity:.45;height:100%;animation-duration:26s;animation-direction:reverse;transform:translateY(-6px)}
+.wv.l2{opacity:.75;height:88%;animation-duration:20s}
+.wv.l3{opacity:1;height:72%;animation-duration:15s;animation-direction:reverse}
+@keyframes drift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.wv.l1{animation-name:drift1}
+@keyframes drift1{from{transform:translate(0,-6px)}to{transform:translate(-50%,-6px)}}
+.wv path{fill:currentColor}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 28px;border-radius:999px;border:1px solid var(--ink);background:var(--butter);color:var(--ink);font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:400;text-decoration:none;transition:transform .25s,background .25s,box-shadow .25s}
+.btn:hover{background:var(--butter-deep);transform:translateY(-1px);box-shadow:0 8px 20px -10px rgba(70,65,58,.5)}
+.btn:active{transform:translateY(0)}
+.btn.ghost{background:transparent}
+.btn.ghost:hover{background:rgba(246,230,160,.55)}
+.btn.sm{padding:10px 18px;font-size:11px}
+.btn[disabled]{opacity:.55;cursor:not-allowed;transform:none;box-shadow:none}
+
+/* ---------- arch photo ---------- */
+.arch{position:relative;width:min(74vw,320px);margin:0 auto}
+.arch::before{content:"";position:absolute;inset:-10px;border:1px solid var(--ink);opacity:.28;border-radius:999px 999px 26px 26px}
+.arch img{width:100%;height:100%;object-fit:cover;border-radius:999px 999px 20px 20px;position:relative;box-shadow:0 30px 50px -30px rgba(70,65,58,.55)}
+.arch.tall{aspect-ratio:3/4.1}
+
+/* ---------- cover ---------- */
+.cover{position:fixed;inset:0;z-index:100;background:linear-gradient(180deg,var(--butter-soft) 0%,var(--cream) 62%,var(--mist) 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px 24px 100px;transition:transform 1s cubic-bezier(.7,0,.2,1),opacity .6s .5s}
+.cover.open{transform:translateY(-100%);opacity:0;pointer-events:none}
+.cover .arch{width:min(56vw,230px);height:min(36svh,320px);margin:18px auto 26px}
+.cover .names{font-size:clamp(38px,11vw,54px)}
+.cover .date{margin-top:12px;font-size:12px;letter-spacing:.34em;color:var(--muted);font-weight:400}
+.cover .dear{margin-top:16px;font-size:13px;color:#5d574e}
+.cover .dear b{font-weight:500}
+.cover .btn{margin-top:20px}
+.cover .waves{height:96px;--wc:var(--sea)}
+
+/* ---------- hero ---------- */
+#home .arch{margin:34px auto 44px}
+#home .names{margin-top:6px}
+.meta{margin-top:18px;font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:#5d574e;font-weight:400}
+.meta span{display:block;margin-top:4px;color:var(--muted);letter-spacing:.2em}
+.scroll{margin:34px auto 0;width:1px;height:44px;background:linear-gradient(var(--ink),transparent);opacity:.45;animation:pulse 2.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scaleY(.4);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}}
+
+/* ---------- invite ---------- */
+.verse{font-family:var(--serif);font-style:italic;font-size:20px;line-height:1.55;max-width:400px;margin:20px auto 0;color:#5d574e}
+.verse small{display:block;margin-top:10px;font-family:var(--sans);font-style:normal;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+.pair{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center;margin:38px 0 6px}
+.pair .who{font-family:var(--serif);font-size:clamp(34px,9vw,42px);font-style:italic;font-weight:300;line-height:1.1}
+.pair .role{display:block;font-family:var(--sans);font-style:normal;font-size:10px;letter-spacing:.34em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.pair .amp{font-family:var(--serif);font-size:26px;color:var(--muted)}
+.photo-wide{margin:36px auto 0;border-radius:22px;overflow:hidden;box-shadow:0 30px 50px -34px rgba(70,65,58,.6)}
+.photo-wide img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 30%}
+
+/* ---------- events ---------- */
+.cal{max-width:320px;margin:30px auto 8px;padding:22px 20px 18px;background:rgba(255,255,255,.7);border:1px solid var(--line);border-radius:22px}
+.cal h3{font-family:var(--serif);font-weight:400;font-size:21px;letter-spacing:.08em;margin-bottom:12px}
+.cal .grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px 0;font-size:13px}
+.cal .dow{font-size:10px;letter-spacing:.14em;color:var(--muted);padding-bottom:6px}
+.cal .d{aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-weight:300}
+.cal .d.on{background:var(--butter);border-radius:50%;font-weight:500;position:relative;box-shadow:0 0 0 5px rgba(246,230,160,.45)}
+.cal .cap{margin-top:12px;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+.events{display:grid;gap:18px;margin-top:34px}
+.card{background:rgba(255,255,255,.72);border:1px solid var(--line);border-radius:22px;padding:30px 24px 26px}
+.card .tag{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--muted);font-weight:400}
+.card .time{font-family:var(--serif);font-size:38px;font-weight:300;line-height:1.1;margin:10px 0 2px}
+.card .time small{font-size:.5em;letter-spacing:.14em;margin-left:4px}
+.card .venue{font-weight:500;margin-top:14px}
+.card address{font-style:normal;font-size:14px;color:#6a645a;max-width:300px;margin:2px auto 0}
+.card .row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+
+/* ---------- countdown ---------- */
+.count{display:flex;justify-content:center;align-items:flex-start;gap:6px;margin-top:34px}
+.count .u{width:clamp(62px,19vw,84px)}
+.count .n{font-family:var(--serif);font-weight:300;font-size:clamp(40px,12vw,56px);line-height:1;background:rgba(255,252,243,.75);border-radius:18px;padding:16px 0 14px;font-variant-numeric:tabular-nums}
+.count .l{margin-top:10px;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#5d574e}
+.count .c{font-family:var(--serif);font-size:34px;line-height:1;padding-top:18px;color:var(--muted)}
+.count-done{margin-top:30px;font-family:var(--serif);font-style:italic;font-size:26px}
+
+/* ---------- gallery ---------- */
+.gallery{columns:2;column-gap:12px;margin-top:34px;text-align:left}
+.gallery button{display:block;width:100%;border:0;background:none;margin:0 0 12px;break-inside:avoid;border-radius:16px;overflow:hidden;position:relative}
+.gallery img{width:100%;height:auto;transition:transform .8s}
+.gallery button:hover img{transform:scale(1.04)}
+.gallery button:nth-child(even){margin-top:14px}
+.lb{position:fixed;inset:0;z-index:200;background:rgba(40,36,30,.92);display:none;align-items:center;justify-content:center;padding:20px}
+.lb.show{display:flex}
+.lb img{max-height:86svh;max-width:100%;border-radius:12px}
+.lb button{position:absolute;background:rgba(255,252,243,.14);border:0;color:#fff;width:44px;height:44px;border-radius:50%;font-size:22px;line-height:1}
+.lb .x{top:16px;right:16px}.lb .p{left:12px;top:50%}.lb .nx{right:12px;top:50%}
+
+/* ---------- rsvp ---------- */
+form{margin-top:34px;text-align:left}
+.f{margin-bottom:22px}
+.f>label,.f>.lab{display:block;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);font-weight:400;margin-bottom:9px}
+input[type=text],textarea{width:100%;font:inherit;font-weight:300;color:var(--ink);background:rgba(255,255,255,.75);border:1px solid var(--line);border-radius:14px;padding:14px 16px;transition:border .2s,box-shadow .2s}
+textarea{min-height:110px;resize:vertical}
+input[type=text]:focus,textarea:focus{outline:0;border-color:var(--ink);box-shadow:0 0 0 4px rgba(246,230,160,.6)}
+.opts{display:grid;gap:8px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.opt span{display:flex;align-items:center;gap:12px;padding:13px 16px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.7);font-size:15px;transition:all .2s}
+.opt span::before{content:"";flex:none;width:16px;height:16px;border-radius:50%;border:1px solid var(--ink);opacity:.5;transition:all .2s}
+.opt input:checked+span{background:var(--butter);border-color:var(--ink)}
+.opt input:checked+span::before{background:var(--ink);opacity:1;box-shadow:inset 0 0 0 3px var(--butter)}
+.opt input:focus-visible+span{outline:2px solid var(--ink);outline-offset:2px}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.seg .opt span{justify-content:center;padding:13px 0}
+.seg .opt span::before{display:none}
+.seg input:disabled+span{opacity:.35;cursor:not-allowed}
+.hint{font-size:12px;color:var(--muted);margin-top:7px}
+.hp{position:absolute;left:-9999px;opacity:0;height:0;width:0}
+.err{color:#a4473a;font-size:13px;margin-top:10px;min-height:1em;text-align:center}
+.submit-row{text-align:center;margin-top:8px}
+.thanks{display:none;margin-top:34px;padding:34px 24px;background:rgba(255,255,255,.75);border:1px solid var(--line);border-radius:22px}
+.thanks.show{display:block}
+.thanks h3{font-family:var(--serif);font-style:italic;font-weight:300;font-size:30px}
+.thanks p{margin-top:8px;color:#5d574e}
+.link{background:none;border:0;text-decoration:underline;text-underline-offset:4px;font-size:13px;color:var(--muted);margin-top:16px}
+.demo-note{display:none;margin-top:14px;font-size:12px;color:#8a6d1e;background:rgba(246,230,160,.55);padding:8px 12px;border-radius:10px;text-align:center}
+
+.wishes{margin-top:56px}
+.wishes-list{margin-top:22px;max-height:520px;overflow:auto;text-align:left;display:grid;gap:12px;padding:4px 2px;scrollbar-width:thin}
+.wish{background:rgba(255,255,255,.78);border:1px solid var(--line);border-radius:18px;padding:16px 18px;animation:pop .5s ease both}
+.wish.new{border-color:var(--ink);background:var(--cream)}
+.wish b{font-weight:500;font-size:15px}
+.wish time{display:block;font-size:11px;letter-spacing:.1em;color:var(--muted);margin:1px 0 6px}
+.wish p{font-size:15px;color:#4f4a42;white-space:pre-wrap;word-wrap:break-word;overflow-wrap:anywhere}
+.empty{color:var(--muted);font-size:14px;text-align:center;padding:18px}
+@keyframes pop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+/* ---------- gift ---------- */
+.bank{max-width:360px;margin:32px auto 0;padding:30px 24px;border-radius:24px;background:linear-gradient(135deg,var(--butter) 0%,var(--butter-soft) 55%,var(--mist) 130%);border:1px solid var(--line);box-shadow:0 30px 44px -34px rgba(70,65,58,.55);text-align:left}
+.bank .bn{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:#6a645a;font-weight:400}
+.bank .no{font-family:var(--serif);font-size:34px;letter-spacing:.06em;margin:18px 0 6px;font-weight:400;line-height:1.1}
+.bank .nm{font-size:14px;color:#5d574e}
+.bank .btn{margin-top:20px;background:var(--cream)}
+.registry{margin-top:46px;color:#5d574e}
+.registry .btn{margin-top:18px}
+
+footer{padding:74px 0 70px;text-align:center}
+footer .names{font-size:clamp(40px,12vw,54px)}
+footer .thx{font-family:var(--serif);font-style:italic;font-size:26px;margin-bottom:14px}
+footer .small{margin-top:30px;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:#6a645a}
+
+/* ---------- music + toast ---------- */
+.music{position:fixed;right:16px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:90;width:46px;height:46px;border-radius:50%;border:1px solid var(--ink);background:var(--butter);display:none;align-items:center;justify-content:center;box-shadow:0 10px 24px -12px rgba(70,65,58,.6)}
+.music.show{display:flex}
+.music .eq{display:flex;gap:3px;align-items:flex-end;height:16px}
+.music .eq i{display:block;width:3px;background:var(--ink);border-radius:2px;height:5px}
+.music.on .eq i{animation:eq 1s ease-in-out infinite}
+.music.on .eq i:nth-child(2){animation-delay:.2s}.music.on .eq i:nth-child(3){animation-delay:.4s}.music.on .eq i:nth-child(4){animation-delay:.1s}
+@keyframes eq{0%,100%{height:4px}50%{height:16px}}
+.toast{position:fixed;left:50%;bottom:calc(76px + env(safe-area-inset-bottom));transform:translate(-50%,20px);z-index:300;background:var(--ink);color:var(--cream);font-size:13px;padding:11px 20px;border-radius:999px;opacity:0;pointer-events:none;transition:all .35s;white-space:nowrap}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* ---------- reveal ---------- */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity 1s ease,transform 1s ease}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.d1{transition-delay:.12s}.js .rv.d2{transition-delay:.24s}.js .rv.d3{transition-delay:.36s}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .rv{opacity:1;transform:none}
+}
+@media (max-height:640px){
+  .cover .arch{height:30svh}
+  .cover{padding-bottom:84px}
+}
+</style>
+</head>
+<body class="locked">
+
+<!-- shared wave shape (2 full periods so the loop is seamless) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <path id="wp" fill="currentColor" d="M0,52 Q180,2 360,52 T720,52 T1080,52 T1440,52 T1800,52 T2160,52 T2520,52 T2880,52 V120 H0 Z"/>
+  </defs>
+</svg>
+
+<audio id="bgm" src="assets/music/dalam-satu-doa.mp3" loop preload="auto" playsinline></audio>
+
+<!-- ================= COVER ================= -->
+<div class="cover" id="cover">
+  <p class="kr">우리 결혼해요</p>
+  <p class="eyebrow" style="margin-top:6px">The Wedding of</p>
+  <div class="arch"><img src="assets/img/booth-heart.jpg" alt="Daniel and Joedie making finger hearts" style="object-position:48% 30%"></div>
+  <h1 class="names">Daniel <i>&amp;</i> Joedie</h1>
+  <p class="date">06 · 02 · 2027</p>
+  <p class="dear" id="dear" hidden>Dear <b id="guestName"></b></p>
+  <button class="btn" id="openBtn" type="button">Open Invitation</button>
+  <div class="waves" aria-hidden="true">
+    <svg class="wv l1" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+    <svg class="wv l2" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+    <svg class="wv l3" viewBox="0 0 2880 120" preserveAspectRatio="none" style="color:var(--butter-soft)"><use href="#wp"/></svg>
+  </div>
+</div>
+
+<button class="music" id="musicBtn" type="button" aria-label="Toggle background music">
+  <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+</button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<main>
+<!-- ================= HOME ================= -->
+<section id="home" class="bg-cream">
+  <div class="wrap">
+    <p class="kr rv">우리 결혼해요</p>
+    <p class="eyebrow rv d1" style="margin-top:8px">Save the date</p>
+    <div class="arch tall rv d1"><img src="assets/img/studio-cream.jpg" alt="Daniel and Joedie in cream wedding attire, holding hands" style="object-position:50% 22%"></div>
+    <h2 class="names rv" style="font-style:normal">Daniel <i>&amp;</i> Joedie</h2>
+    <p class="meta rv d1">Saturday · 06 February 2027<span>Roxy Hotel Lawas · Sarawak</span></p>
+    <div class="scroll" aria-hidden="true"></div>
+  </div>
+  <div class="waves" style="--wc:var(--butter-soft)" aria-hidden="true">
+    <svg class="wv l1" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+    <svg class="wv l2" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+    <svg class="wv l3" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+  </div>
+</section>
+
+<!-- ================= INVITATION ================= -->
+<section id="invite" class="bg-butter">
+  <div class="wrap">
+    <p class="eyebrow rv">Together with our families</p>
+    <h2 class="rv d1">We’re getting married</h2>
+    <div class="rule rv"></div>
+    <p class="verse rv">“And now these three remain: faith, hope and love. But the greatest of these is love.”<small>1 Corinthians 13:13</small></p>
+    <p class="lead rv">With joyful hearts, we invite you to celebrate the beginning of our married life. Your presence and prayers would mean the world to us.</p>
+
+    <div class="pair rv">
+      <div class="who"><span class="role">The Groom</span>Daniel</div>
+      <div class="amp">&amp;</div>
+      <div class="who"><span class="role">The Bride</span>Joedie</div>
+    </div>
+
+    <div class="photo-wide rv"><img src="assets/img/booth-rings.jpg" alt="Daniel and Joedie showing their rings" loading="lazy"></div>
+  </div>
+  <div class="waves" style="--wc:var(--cream)" aria-hidden="true">
+    <svg class="wv l1" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+    <svg class="wv l2" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+    <svg class="wv l3" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+  </div>
+</section>
+
+<!-- ================= EVENT ================= -->
+<section id="event" class="bg-cream">
+  <div class="wrap">
+    <p class="eyebrow rv">Wedding Day</p>
+    <h2 class="rv d1">Saturday, 06 February 2027</h2>
+
+    <div class="cal rv" aria-label="February 2027 calendar">
+      <h3>February 2027</h3>
+      <div class="grid" id="calGrid"></div>
+      <p class="cap">06 · Saturday</p>
+    </div>
+
+    <div class="events">
+      <article class="card rv">
+        <p class="tag">Holy Matrimony</p>
+        <p class="time">09:00<small>AM</small></p>
+        <p class="venue">Roxy Hotel Lawas</p>
+        <address>Lot 1119 Block 10, 98850 Lawas, Sarawak</address>
+        <div class="row">
+          <a class="btn sm" href="https://maps.app.goo.gl/1oAvuw99LMnHrHJt9" target="_blank" rel="noopener">View Map</a>
+          <a class="btn sm ghost" id="calMatrimony" target="_blank" rel="noopener">Add to Calendar</a>
+        </div>
+      </article>
+      <article class="card rv">
+        <p class="tag">Reception</p>
+        <p class="time">11:00<small>AM</small></p>
+        <p class="venue">Roxy Hotel Lawas</p>
+        <address>Lot 1119 Block 10, 98850 Lawas, Sarawak</address>
+        <div class="row">
+          <a class="btn sm" href="https://maps.app.goo.gl/1oAvuw99LMnHrHJt9" target="_blank" rel="noopener">View Map</a>
+          <a class="btn sm ghost" id="calReception" target="_blank" rel="noopener">Add to Calendar</a>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="waves" style="--wc:var(--mist)" aria-hidden="true">
+    <svg class="wv l1" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+    <svg class="wv l2" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+    <svg class="wv l3" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+  </div>
+</section>
+
+<!-- ================= COUNTDOWN ================= -->
+<section id="countdown" class="bg-mist">
+  <div class="wrap">
+    <p class="eyebrow rv">Counting down</p>
+    <h2 class="rv d1">Until we say “I do”</h2>
+    <div class="count rv" id="count" role="timer" aria-live="off">
+      <div class="u"><div class="n" id="cd-d">00</div><div class="l">Days</div></div>
+      <div class="c">:</div>
+      <div class="u"><div class="n" id="cd-h">00</div><div class="l">Hours</div></div>
+      <div class="c">:</div>
+      <div class="u"><div class="n" id="cd-m">00</div><div class="l">Minutes</div></div>
+      <div class="c">:</div>
+      <div class="u"><div class="n" id="cd-s">00</div><div class="l">Seconds</div></div>
+    </div>
+    <p class="count-done" id="cdDone" hidden>Today is the day — see you there!</p>
+  </div>
+  <div class="waves" style="--wc:var(--cream)" aria-hidden="true">
+    <svg class="wv l1" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+    <svg class="wv l2" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+    <svg class="wv l3" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery" class="bg-cream">
+  <div class="wrap">
+    <p class="eyebrow rv">Our moments</p>
+    <h2 class="rv d1">Gallery</h2>
+    <div class="gallery rv" id="gallery">
+      <button type="button" data-i="0"><img src="assets/img/veil-bouquet.jpg" alt="Daniel and Joedie under a veil with petals" loading="lazy"></button>
+      <button type="button" data-i="1"><img src="assets/img/booth-heart.jpg" alt="Finger hearts" loading="lazy"></button>
+      <button type="button" data-i="2"><img src="assets/img/hallway-bw.jpg" alt="Black and white photo walking down a hallway" loading="lazy"></button>
+      <button type="button" data-i="3"><img src="assets/img/booth-rings.jpg" alt="Showing off the rings" loading="lazy"></button>
+      <button type="button" data-i="4"><img src="assets/img/studio-cream.jpg" alt="Studio portrait in cream" loading="lazy"></button>
+    </div>
+  </div>
+  <div class="waves" style="--wc:var(--butter-soft)" aria-hidden="true">
+    <svg class="wv l1" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+    <svg class="wv l2" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+    <svg class="wv l3" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+  </div>
+</section>
+
+<!-- ================= RSVP ================= -->
+<section id="rsvp" class="bg-butter">
+  <div class="wrap">
+    <p class="eyebrow rv">RSVP</p>
+    <h2 class="rv d1">Will you join us?</h2>
+    <p class="lead rv">Kindly let us know if you can make it, and leave a little note for the happy couple.</p>
+
+    <form id="rsvpForm" class="rv" novalidate autocomplete="off">
+      <div class="f">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" maxlength="80" placeholder="Full name" required>
+      </div>
+
+      <div class="f">
+        <span class="lab" id="attLab">Will you attend?</span>
+        <div class="opts" role="radiogroup" aria-labelledby="attLab">
+          <label class="opt"><input type="radio" name="attendance" value="Yes, Holy Matrimony &amp; Reception"><span>Yes, Holy Matrimony &amp; Reception</span></label>
+          <label class="opt"><input type="radio" name="attendance" value="Yes, Holy Matrimony only"><span>Yes, Holy Matrimony only</span></label>
+          <label class="opt"><input type="radio" name="attendance" value="Yes, Reception only"><span>Yes, Reception only</span></label>
+          <label class="opt"><input type="radio" name="attendance" value="Unable to attend either"><span>Unable to attend either</span></label>
+        </div>
+      </div>
+
+      <div class="f">
+        <span class="lab" id="gLab">Number of guests</span>
+        <div class="seg" role="radiogroup" aria-labelledby="gLab">
+          <label class="opt"><input type="radio" name="guests" value="0"><span>0</span></label>
+          <label class="opt"><input type="radio" name="guests" value="1" checked><span>1</span></label>
+          <label class="opt"><input type="radio" name="guests" value="2"><span>2</span></label>
+        </div>
+        <p class="hint">Including yourself. Select 0 if you’re unable to attend.</p>
+      </div>
+
+      <div class="f">
+        <label for="message">Message for the groom &amp; bride</label>
+        <textarea id="message" name="message" maxlength="300" placeholder="Write your wishes here…"></textarea>
+      </div>
+
+      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div class="submit-row">
+        <button class="btn" id="submitBtn" type="submit">Send RSVP</button>
+        <p class="err" id="formErr" role="alert"></p>
+        <p class="demo-note" id="demoNote">Preview mode — responses aren’t saved yet. Add your Apps Script URL in <code>index.html</code> (see README).</p>
+      </div>
+    </form>
+
+    <div class="thanks" id="thanks">
+      <h3 id="thanksTitle">Thank you!</h3>
+      <p id="thanksText">Your RSVP has been received.</p>
+      <button class="link" id="againBtn" type="button">Submit another response</button>
+    </div>
+
+    <div class="wishes" id="wishes">
+      <p class="eyebrow">Wishes &amp; Messages</p>
+      <h2 style="font-size:clamp(28px,8vw,36px)">From our loved ones</h2>
+      <div class="wishes-list" id="wishList" aria-live="polite"></div>
+    </div>
+  </div>
+  <div class="waves" style="--wc:var(--cream)" aria-hidden="true">
+    <svg class="wv l1" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+    <svg class="wv l2" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+    <svg class="wv l3" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+  </div>
+</section>
+
+<!-- ================= GIFT ================= -->
+<section id="gift" class="bg-cream">
+  <div class="wrap">
+    <p class="eyebrow rv">Wedding Gift</p>
+    <h2 class="rv d1">E-Gift</h2>
+    <p class="lead rv">Your presence is the greatest gift. Should you wish to bless us further, you may send an e-gift via bank transfer.</p>
+
+    <div class="bank rv">
+      <p class="bn">CIMB Bank</p>
+      <p class="no" id="accNo">7066 840 265</p>
+      <p class="nm">Joedie Vieenieeda</p>
+      <button class="btn sm" id="copyBtn" type="button">Copy Account Number</button>
+    </div>
+
+    <div class="registry rv">
+      <div class="rule"></div>
+      <p>If you’d like to give us something as a wedding gift, we have a registry — you can click here.</p>
+      <a class="btn ghost sm" id="registryBtn" href="#" target="_blank" rel="noopener">Wedding Registry</a>
+    </div>
+  </div>
+  <div class="waves" style="--wc:var(--mist)" aria-hidden="true">
+    <svg class="wv l1" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+    <svg class="wv l2" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+    <svg class="wv l3" viewBox="0 0 2880 120" preserveAspectRatio="none"><use href="#wp"/></svg>
+  </div>
+</section>
+</main>
+
+<footer class="bg-mist">
+  <div class="wrap">
+    <p class="thx rv">Thank you for celebrating with us</p>
+    <p class="names rv d1">Daniel <i>&amp;</i> Joedie</p>
+    <p class="small rv d2">06 · 02 · 2027 &nbsp;·&nbsp; Lawas, Sarawak</p>
+  </div>
+</footer>
+
+<!-- lightbox -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="x" type="button" aria-label="Close">×</button>
+  <button class="p" type="button" aria-label="Previous">‹</button>
+  <img id="lbImg" alt="">
+  <button class="nx" type="button" aria-label="Next">›</button>
+</div>
+
+<script>
+/* ============================================================
+   CONFIG — the only things you normally need to edit
+   ============================================================ */
+const CONFIG = {
+  // 1) Paste the Web App URL from Google Apps Script here (see README, step 3)
+  scriptUrl: "PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE",
+  // 2) Wedding start (Holy Matrimony) — Sarawak time, UTC+08:00
+  weddingDate: "2027-02-06T09:00:00+08:00",
+  // 3) Paste your wedding registry link here (leave empty if none yet)
+  registryUrl: "",
+  // 4) Bank account number (digits only — this is what gets copied)
+  accountNumber: "7066840265"
+};
+
+/* ---------- helpers ---------- */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const toastEl = $('#toast');
+let toastT;
+function toast(msg){
+  toastEl.textContent = msg; toastEl.classList.add('show');
+  clearTimeout(toastT); toastT = setTimeout(() => toastEl.classList.remove('show'), 2200);
+}
+const isDemo = !/^https:\/\/script\.google\.com\//.test(CONFIG.scriptUrl);
+
+/* ---------- guest name from ?to=Name ---------- */
+(function(){
+  try{
+    const to = new URLSearchParams(location.search).get('to');
+    if(to && to.trim()){
+      $('#guestName').textContent = to.trim().slice(0, 60);
+      $('#dear').hidden = false;
+      const n = $('#name'); if(n) n.value = to.trim().slice(0, 80);
+    }
+  }catch(e){}
+})();
+
+/* ---------- open invitation + music ---------- */
+const bgm = $('#bgm'), musicBtn = $('#musicBtn');
+function syncMusicBtn(){ musicBtn.classList.toggle('on', !bgm.paused); }
+bgm.volume = 0.7;
+$('#openBtn').addEventListener('click', () => {
+  $('#cover').classList.add('open');
+  document.body.classList.remove('locked');
+  window.scrollTo(0, 0);
+  musicBtn.classList.add('show');
+  const p = bgm.play();
+  if(p && p.catch) p.catch(() => {});
+  setTimeout(() => { $('#cover').style.display = 'none'; }, 1700);
+});
+bgm.addEventListener('play', syncMusicBtn);
+bgm.addEventListener('pause', syncMusicBtn);
+musicBtn.addEventListener('click', () => { bgm.paused ? bgm.play().catch(()=>{}) : bgm.pause(); });
+
+/* ---------- scroll reveal ---------- */
+const io = 'IntersectionObserver' in window ? new IntersectionObserver((es) => {
+  es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: .12, rootMargin: '0px 0px -6% 0px' }) : null;
+$$('.rv').forEach(el => io ? io.observe(el) : el.classList.add('in'));
+
+/* ---------- calendar (Feb 2027) ---------- */
+(function(){
+  const g = $('#calGrid');
+  ['S','M','T','W','T','F','S'].forEach(d => { const e = document.createElement('div'); e.className = 'dow'; e.textContent = d; g.appendChild(e); });
+  const first = new Date(2027, 1, 1).getDay(), days = new Date(2027, 2, 0).getDate();
+  for(let i = 0; i < first; i++) g.appendChild(document.createElement('div'));
+  for(let d = 1; d <= days; d++){
+    const e = document.createElement('div'); e.className = 'd' + (d === 6 ? ' on' : ''); e.textContent = d; g.appendChild(e);
+  }
+})();
+
+/* ---------- add to calendar (Google Calendar links; times in UTC) ---------- */
+(function(){
+  const loc = 'Roxy Hotel Lawas, Lot 1119 Block 10, 98850 Lawas, Sarawak';
+  const mk = (title, s, e) => 'https://calendar.google.com/calendar/render?action=TEMPLATE'
+    + '&text=' + encodeURIComponent(title) + '&dates=' + s + '/' + e
+    + '&location=' + encodeURIComponent(loc)
+    + '&details=' + encodeURIComponent('Wedding of Daniel & Joedie');
+  $('#calMatrimony').href = mk('Holy Matrimony — Daniel & Joedie', '20270206T010000Z', '20270206T023000Z');
+  $('#calReception').href = mk('Wedding Reception — Daniel & Joedie', '20270206T030000Z', '20270206T060000Z');
+})();
+
+/* ---------- countdown (day : hour : minute : seconds) ---------- */
+(function(){
+  const target = new Date(CONFIG.weddingDate).getTime();
+  const els = { d: $('#cd-d'), h: $('#cd-h'), m: $('#cd-m'), s: $('#cd-s') };
+  const pad = n => String(n).padStart(2, '0');
+  function tick(){
+    let diff = target - Date.now();
+    if(diff <= 0){
+      $('#count').style.display = 'none'; $('#cdDone').hidden = false; clearInterval(t); return;
+    }
+    const s = Math.floor(diff / 1000);
+    els.d.textContent = pad(Math.floor(s / 86400));
+    els.h.textContent = pad(Math.floor(s % 86400 / 3600));
+    els.m.textContent = pad(Math.floor(s % 3600 / 60));
+    els.s.textContent = pad(s % 60);
+  }
+  const t = setInterval(tick, 1000); tick();
+})();
+
+/* ---------- gallery lightbox ---------- */
+(function(){
+  const imgs = $$('#gallery img'), lb = $('#lb'), li = $('#lbImg');
+  let cur = 0;
+  const show = i => { cur = (i + imgs.length) % imgs.length; li.src = imgs[cur].src; li.alt = imgs[cur].alt; lb.classList.add('show'); };
+  const hide = () => lb.classList.remove('show');
+  $$('#gallery button').forEach((b, i) => b.addEventListener('click', () => show(i)));
+  $('.x', lb).onclick = hide; $('.p', lb).onclick = e => { e.stopPropagation(); show(cur - 1); }; $('.nx', lb).onclick = e => { e.stopPropagation(); show(cur + 1); };
+  lb.addEventListener('click', e => { if(e.target === lb) hide(); });
+  addEventListener('keydown', e => { if(!lb.classList.contains('show')) return; if(e.key === 'Escape') hide(); if(e.key === 'ArrowLeft') show(cur - 1); if(e.key === 'ArrowRight') show(cur + 1); });
+})();
+
+/* ---------- e-gift: copy account number ---------- */
+$('#copyBtn').addEventListener('click', async () => {
+  const txt = CONFIG.accountNumber;
+  try{
+    await navigator.clipboard.writeText(txt);
+  }catch(e){
+    const ta = document.createElement('textarea'); ta.value = txt; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    try{ document.execCommand('copy'); }catch(_){}
+    ta.remove();
+  }
+  toast('Account number copied ✓');
+  const b = $('#copyBtn'), old = b.textContent; b.textContent = 'Copied ✓'; setTimeout(() => b.textContent = old, 1800);
+});
+
+/* ---------- registry link ---------- */
+(function(){
+  const b = $('#registryBtn');
+  if(CONFIG.registryUrl){ b.href = CONFIG.registryUrl; }
+  else{ b.removeAttribute('target'); b.addEventListener('click', e => { e.preventDefault(); toast('Registry link coming soon'); }); }
+})();
+
+/* ---------- RSVP + wishes ---------- */
+(function(){
+  const form = $('#rsvpForm'), btn = $('#submitBtn'), err = $('#formErr'), list = $('#wishList');
+  const thanks = $('#thanks');
+  const guestRadios = $$('input[name=guests]'), attRadios = $$('input[name=attendance]');
+  if(isDemo) $('#demoNote').style.display = 'block';
+
+  let server = [], pending = [];
+
+  // Guests: lock to 0 when not attending, otherwise 1 or 2
+  function syncGuests(){
+    const att = (attRadios.find(r => r.checked) || {}).value;
+    const no = att === 'Unable to attend either';
+    guestRadios.forEach(r => {
+      if(no){ r.disabled = r.value !== '0'; r.checked = r.value === '0'; }
+      else { r.disabled = r.value === '0'; if(r.value === '0' && r.checked){ r.checked = false; guestRadios.find(x => x.value === '1').checked = true; } }
+    });
+  }
+  attRadios.forEach(r => r.addEventListener('change', syncGuests));
+
+  function ago(iso){
+    const t = new Date(iso).getTime(); if(!t) return '';
+    const s = Math.max(0, (Date.now() - t) / 1000);
+    if(s < 60) return 'Just now';
+    if(s < 3600) return Math.floor(s / 60) + ' min ago';
+    if(s < 86400) return Math.floor(s / 3600) + ' hr ago';
+    if(s < 86400 * 30) return Math.floor(s / 86400) + ' day' + (s >= 172800 ? 's' : '') + ' ago';
+    return new Date(iso).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+  }
+
+  function render(){
+    // keep optimistic items until the server list contains them
+    pending = pending.filter(p => !server.some(s => s.name === p.name && s.message === p.message));
+    const all = [...pending, ...server];
+    list.textContent = '';
+    if(!all.length){
+      const d = document.createElement('p'); d.className = 'empty'; d.textContent = 'Be the first to leave a wish for Daniel & Joedie ♡'; list.appendChild(d); return;
+    }
+    all.forEach(w => {
+      const a = document.createElement('article'); a.className = 'wish' + (w.local ? ' new' : '');
+      const b = document.createElement('b'); b.textContent = w.name;
+      const t = document.createElement('time'); t.textContent = ago(w.ts);
+      const p = document.createElement('p'); p.textContent = w.message;
+      a.append(b, t, p); list.appendChild(a);
+    });
+  }
+
+  async function load(){
+    if(isDemo){ render(); return; }
+    try{
+      const r = await fetch(CONFIG.scriptUrl + '?action=wishes&t=' + Date.now());
+      const j = await r.json();
+      if(j && Array.isArray(j.wishes)){ server = j.wishes; render(); }
+    }catch(e){
+      if(!list.children.length){ list.innerHTML = '<p class="empty">Messages are loading… please refresh in a moment.</p>'; }
+    }
+  }
+
+  form.addEventListener('submit', async e => {
+    e.preventDefault(); err.textContent = '';
+    const fd = new FormData(form);
+    const name = (fd.get('name') || '').toString().trim();
+    const attendance = fd.get('attendance');
+    const guests = fd.get('guests');
+    const message = (fd.get('message') || '').toString().trim();
+    if(fd.get('website')) return;                       // honeypot
+    if(!name){ err.textContent = 'Please enter your name.'; $('#name').focus(); return; }
+    if(!attendance){ err.textContent = 'Please choose your attendance.'; return; }
+    if(guests === null){ err.textContent = 'Please choose the number of guests.'; return; }
+
+    btn.disabled = true; btn.textContent = 'Sending…';
+    try{
+      if(!isDemo){
+        const body = new URLSearchParams({ name, attendance, guests, message });
+        await fetch(CONFIG.scriptUrl, { method: 'POST', mode: 'no-cors', body });
+      }
+      if(message){ pending.unshift({ name, message, ts: new Date().toISOString(), local: true }); render(); }
+      const going = attendance !== 'Unable to attend either';
+      $('#thanksTitle').textContent = 'Thank you, ' + name.split(' ')[0] + '!';
+      $('#thanksText').textContent = going ? 'Your RSVP has been received — we can’t wait to celebrate with you.' : 'Your RSVP has been received — you’ll be in our hearts on the day.';
+      form.style.display = 'none'; thanks.classList.add('show');
+      setTimeout(() => $('#wishes').scrollIntoView({ behavior: 'smooth', block: 'start' }), 500);
+      if(!isDemo) setTimeout(load, 2500);
+    }catch(ex){
+      err.textContent = 'Something went wrong. Please check your connection and try again.';
+    }finally{
+      btn.disabled = false; btn.textContent = 'Send RSVP';
+    }
+  });
+
+  $('#againBtn').addEventListener('click', () => {
+    form.reset(); syncGuests(); thanks.classList.remove('show'); form.style.display = '';
+    form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  render(); load();
+  setInterval(() => { if(!document.hidden) load(); }, 45000);
+})();
+</script>
+</body>
+</html>
